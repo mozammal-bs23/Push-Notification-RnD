@@ -3,3 +3,4 @@ linter:
   rules:
     public_member_api_docs: false
     no_default_cases: true
+

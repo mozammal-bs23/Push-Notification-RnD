@@ -1,5 +1,5 @@
-import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
+import 'package:push_notification/l10n/l10n.dart';
 
 class InboxPage extends StatefulWidget {
   const InboxPage({super.key});
@@ -9,19 +9,15 @@ class InboxPage extends StatefulWidget {
 }
 
 class _InboxPageState extends State<InboxPage> {
-  String _message = 'no notification';
+  final String _message = 'no notification';
 
   @override
   Widget build(BuildContext context) {
-    FirebaseMessaging.onMessage.listen((RemoteMessage message) {
-      if (message.notification != null) {
-        _message = message.data.toString();
-      }
-    });
+    final lan = context.l10n;
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Inbox Page'),
+        title: Text(lan.counterAppBarTitle),
       ),
       body: Center(
         child: Text(_message),
