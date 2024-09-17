@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "889727540358",
+    "project_id": "push-notification-rnd-bec5e",
+    "storage_bucket": "push-notification-rnd-bec5e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:889727540358:android:830a47aeffe710aa4a0507",
+        "android_client_info": {
+          "package_name": "com.example.verygoodcore.push_notification"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBI4QL-S0ZCoMuHifq1pMBxKMOW-L1avCk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
