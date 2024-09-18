@@ -13,9 +13,11 @@ class _InboxPageState extends State<InboxPage> {
 
   @override
   Widget build(BuildContext context) {
+    final lan = context.l10n;
+
     return Scaffold(
       appBar: AppBar(
-        title: Text(AppLocalizations.of(context).counterAppBarTitle),
+        title: Text(lan.counterAppBarTitle),
       ),
       body: Center(
         child: Text(_message),
