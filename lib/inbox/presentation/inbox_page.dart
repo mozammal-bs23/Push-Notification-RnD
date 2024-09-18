@@ -10,6 +10,7 @@ class InboxPage extends StatefulWidget {
 
 class _InboxPageState extends State<InboxPage> {
   final String _message = 'no notification';
+  int _nothing = 0;
 
   @override
   Widget build(BuildContext context) {
